@@ -14,6 +14,10 @@
 		FA1A229E1E7B42390097D89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1A229C1E7B42390097D89A /* LaunchScreen.storyboard */; };
 		FA1A22A91E7B42390097D89A /* mapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22A81E7B42390097D89A /* mapsTests.swift */; };
 		FA1A22B41E7B42390097D89A /* mapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22B31E7B42390097D89A /* mapsUITests.swift */; };
+		FA1A22C21E7B463F0097D89A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C11E7B463F0097D89A /* MapViewController.swift */; };
+		FA1A22C61E7B47390097D89A /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C51E7B47390097D89A /* VCMapView.swift */; };
+		FA1A22C81E7B4ACF0097D89A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C71E7B4ACF0097D89A /* MapsViewController.swift */; };
+		FA1A22CA1E7B4EE10097D89A /* RoutePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C91E7B4EE10097D89A /* RoutePin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		FA1A22AF1E7B42390097D89A /* mapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1A22B31E7B42390097D89A /* mapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsUITests.swift; sourceTree = "<group>"; };
 		FA1A22B51E7B42390097D89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1A22C11E7B463F0097D89A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA1A22C51E7B47390097D89A /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCMapView.swift; path = ../../adriansmap/mapkittemp/HonoluluArt/VCMapView.swift; sourceTree = "<group>"; };
+		FA1A22C71E7B4ACF0097D89A /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		FA1A22C91E7B4EE10097D89A /* RoutePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				FA1A22931E7B42390097D89A /* AppDelegate.swift */,
 				FA1A22951E7B42390097D89A /* ViewController.swift */,
+				FA1A22C11E7B463F0097D89A /* MapViewController.swift */,
+				FA1A22C71E7B4ACF0097D89A /* MapsViewController.swift */,
+				FA1A22C91E7B4EE10097D89A /* RoutePin.swift */,
+				FA1A22C51E7B47390097D89A /* VCMapView.swift */,
 				FA1A22971E7B42390097D89A /* Main.storyboard */,
 				FA1A229A1E7B42390097D89A /* Assets.xcassets */,
 				FA1A229C1E7B42390097D89A /* LaunchScreen.storyboard */,
@@ -260,6 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1A22961E7B42390097D89A /* ViewController.swift in Sources */,
+				FA1A22CA1E7B4EE10097D89A /* RoutePin.swift in Sources */,
+				FA1A22C21E7B463F0097D89A /* MapViewController.swift in Sources */,
+				FA1A22C61E7B47390097D89A /* VCMapView.swift in Sources */,
+				FA1A22C81E7B4ACF0097D89A /* MapsViewController.swift in Sources */,
 				FA1A22941E7B42390097D89A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +521,7 @@
 				FA1A22BA1E7B42390097D89A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1A22BB1E7B42390097D89A /* Build configuration list for PBXNativeTarget "mapsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +530,7 @@
 				FA1A22BD1E7B42390097D89A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1A22BE1E7B42390097D89A /* Build configuration list for PBXNativeTarget "mapsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +539,7 @@
 				FA1A22C01E7B42390097D89A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import MapKit
+import CoreData
 
 class ViewController: UIViewController {
+    var managedObjectContext: NSManagedObjectContext?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view, typically from a nib.
+//    }
+
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination.isKind(of: MapsViewController.self) {
+            if let mapsViewController = segue.destination as? MapsViewController {
+//                mapsViewController.managedObjectContext = managedObjectContext
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
+    
 }
 
