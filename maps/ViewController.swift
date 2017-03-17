@@ -23,11 +23,12 @@ class ViewController: UIViewController {
         if segue.destination.isKind(of: MapsViewController.self) {
             if let mapsViewController = segue.destination as? MapsViewController {
 //                mapsViewController.managedObjectContext = managedObjectContext
+            } else if segue.destination.isKind(of: TimeRouteViewController.self) {
+                if let timeRouteViewController = segue.destination as? TimeRouteViewController {
+                    //                mapsViewController.managedObjectContext = managedObjectContext
+                }
             }
         }
-    }
-    
-    
-    
+}
 }
 

@@ -18,6 +18,8 @@
 		FA1A22C61E7B47390097D89A /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C51E7B47390097D89A /* VCMapView.swift */; };
 		FA1A22C81E7B4ACF0097D89A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C71E7B4ACF0097D89A /* MapsViewController.swift */; };
 		FA1A22CA1E7B4EE10097D89A /* RoutePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22C91E7B4EE10097D89A /* RoutePin.swift */; };
+		FA1A22CC1E7B52A30097D89A /* TimeRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22CB1E7B52A30097D89A /* TimeRouteViewController.swift */; };
+		FA1A22CE1E7B5B6D0097D89A /* VCMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22CD1E7B5B6D0097D89A /* VCMapsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		FA1A22C51E7B47390097D89A /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCMapView.swift; path = ../../adriansmap/mapkittemp/HonoluluArt/VCMapView.swift; sourceTree = "<group>"; };
 		FA1A22C71E7B4ACF0097D89A /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		FA1A22C91E7B4EE10097D89A /* RoutePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePin.swift; sourceTree = "<group>"; };
+		FA1A22CB1E7B52A30097D89A /* TimeRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRouteViewController.swift; sourceTree = "<group>"; };
+		FA1A22CD1E7B5B6D0097D89A /* VCMapsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,9 @@
 				FA1A22C71E7B4ACF0097D89A /* MapsViewController.swift */,
 				FA1A22C91E7B4EE10097D89A /* RoutePin.swift */,
 				FA1A22C51E7B47390097D89A /* VCMapView.swift */,
+				FA1A22CD1E7B5B6D0097D89A /* VCMapsView.swift */,
 				FA1A22971E7B42390097D89A /* Main.storyboard */,
+				FA1A22CB1E7B52A30097D89A /* TimeRouteViewController.swift */,
 				FA1A229A1E7B42390097D89A /* Assets.xcassets */,
 				FA1A229C1E7B42390097D89A /* LaunchScreen.storyboard */,
 				FA1A229F1E7B42390097D89A /* Info.plist */,
@@ -206,6 +212,11 @@
 					FA1A228F1E7B42390097D89A = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FA1A22A31E7B42390097D89A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -271,11 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1A22CE1E7B5B6D0097D89A /* VCMapsView.swift in Sources */,
 				FA1A22961E7B42390097D89A /* ViewController.swift in Sources */,
 				FA1A22CA1E7B4EE10097D89A /* RoutePin.swift in Sources */,
 				FA1A22C21E7B463F0097D89A /* MapViewController.swift in Sources */,
 				FA1A22C61E7B47390097D89A /* VCMapView.swift in Sources */,
 				FA1A22C81E7B4ACF0097D89A /* MapsViewController.swift in Sources */,
+				FA1A22CC1E7B52A30097D89A /* TimeRouteViewController.swift in Sources */,
 				FA1A22941E7B42390097D89A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

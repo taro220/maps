@@ -72,12 +72,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-Ht-GPQ">
-                                <rect key="frame" x="16" y="64" width="343" height="583"/>
+                                <rect key="frame" x="16" y="183" width="343" height="464"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDK-1I-H5c">
+                                <rect key="frame" x="191" y="102" width="112" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Djs-nz-CdD"/>
+                                    <constraint firstAttribute="width" constant="112" id="jPc-Ze-35B"/>
+                                </constraints>
+                                <state key="normal" title="Timer"/>
+                                <connections>
+                                    <segue destination="eZh-74-7wG" kind="show" id="rYD-Ij-Rra"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ycX-Ht-GPQ" firstAttribute="top" secondItem="vcc-aI-HXH" secondAttribute="bottom" id="g7p-Iq-K3D"/>
+                            <constraint firstItem="atb-tR-Ln9" firstAttribute="top" secondItem="eDK-1I-H5c" secondAttribute="bottom" constant="525" id="3Do-a9-VwG"/>
+                            <constraint firstItem="ycX-Ht-GPQ" firstAttribute="top" secondItem="vcc-aI-HXH" secondAttribute="bottom" constant="119" id="BKR-qx-lg1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eDK-1I-H5c" secondAttribute="trailing" constant="56" id="MVj-ZZ-V0w"/>
                             <constraint firstItem="atb-tR-Ln9" firstAttribute="top" secondItem="ycX-Ht-GPQ" secondAttribute="bottom" constant="20" id="gMx-iq-c3k"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ycX-Ht-GPQ" secondAttribute="leading" id="kxQ-ex-hTx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ycX-Ht-GPQ" secondAttribute="trailing" id="xFO-Lg-Za7"/>
@@ -89,12 +102,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rG1-0d-Qgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="510"/>
+            <point key="canvasLocation" x="1904.8" y="509.59520239880067"/>
         </scene>
-        <!--View Controller-->
+        <!--Time Route View Controller-->
         <scene sceneID="lMt-p6-Kks">
             <objects>
-                <viewController id="eZh-74-7wG" sceneMemberID="viewController">
+                <viewController id="eZh-74-7wG" customClass="TimeRouteViewController" customModule="maps" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yxa-Va-GhI"/>
                         <viewControllerLayoutGuide type="bottom" id="khr-dv-fM7"/>
@@ -103,17 +116,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-rH-4P6">
-                                <rect key="frame" x="28" y="167" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-rH-4P6">
+                                <rect key="frame" x="16" y="279" width="343" height="368"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIw-Ov-Nhv">
+                                <rect key="frame" x="16" y="20" width="343" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="eZh-74-7wG" eventType="touchUpInside" id="rcg-cH-FRr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-OK-XEt">
+                                <rect key="frame" x="16" y="64" width="343" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-Y8-S66">
+                                <rect key="frame" x="16" y="124" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91D-h1-oG0">
+                                <rect key="frame" x="16" y="180" width="343" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6h-pa-dkY">
+                                <rect key="frame" x="16" y="231" width="343" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="End"/>
+                                <connections>
+                                    <action selector="endPressed:" destination="eZh-74-7wG" eventType="touchUpInside" id="Vsx-uQ-ojE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8A-Y8-S66" firstAttribute="top" secondItem="0jw-OK-XEt" secondAttribute="bottom" constant="8" id="75R-8Y-Rnv"/>
+                            <constraint firstItem="khr-dv-fM7" firstAttribute="top" secondItem="0Kc-rH-4P6" secondAttribute="bottom" constant="20" id="7Ht-oI-wJG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g8A-Y8-S66" secondAttribute="trailing" id="A1F-fq-Dg2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="0Kc-rH-4P6" secondAttribute="leading" id="Gx3-EV-Fwn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="g8A-Y8-S66" secondAttribute="leading" id="RSt-lo-sKj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="0jw-OK-XEt" secondAttribute="leading" id="ZMg-48-rCn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Kc-rH-4P6" secondAttribute="trailing" id="dqn-PT-TBf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="91D-h1-oG0" secondAttribute="trailing" id="ei7-Kf-GsD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="91D-h1-oG0" secondAttribute="leading" id="ezJ-ip-h4V"/>
+                            <constraint firstItem="0Kc-rH-4P6" firstAttribute="top" secondItem="yxa-Va-GhI" secondAttribute="bottom" constant="215" id="oXI-lM-80n"/>
+                            <constraint firstItem="0jw-OK-XEt" firstAttribute="top" secondItem="yxa-Va-GhI" secondAttribute="bottom" id="sC9-Sw-MgP"/>
+                            <constraint firstItem="91D-h1-oG0" firstAttribute="top" secondItem="g8A-Y8-S66" secondAttribute="bottom" constant="8" id="wNz-1r-nYd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="distanceLabel" destination="g8A-Y8-S66" id="xdO-rU-z4A"/>
+                        <outlet property="mapView2" destination="0Kc-rH-4P6" id="q9F-Nk-VwF"/>
+                        <outlet property="speedLabel" destination="0jw-OK-XEt" id="Epa-dP-FxX"/>
+                        <outlet property="startButton" destination="rIw-Ov-Nhv" id="Dw2-tb-lpi"/>
+                        <outlet property="stopButton" destination="p6h-pa-dkY" id="KYV-Rp-gUv"/>
+                        <outlet property="timeLabel" destination="91D-h1-oG0" id="j1t-eI-iei"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jq-IV-lAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="94"/>
+            <point key="canvasLocation" x="2552.8000000000002" y="93.103448275862078"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0FL-Re-fYS">
@@ -131,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QlA-LJ-qa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3136.8000000000002" y="117.39130434782609"/>
+            <point key="canvasLocation" x="3346" y="208"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Soa-Z7-b0q">
@@ -152,4 +222,7 @@
             <point key="canvasLocation" x="180" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rYD-Ij-Rra"/>
+    </inferredMetricsTieBreakers>
 </document>

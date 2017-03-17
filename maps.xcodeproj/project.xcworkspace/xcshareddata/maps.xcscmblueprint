@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1D3183C2F32418F6A3D2F09059B99C8CE289D0A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "521A3D357418F0B8E8211ECD4AF14DC1ACEB62C7" : 9223372036854775807,
+    "1D3183C2F32418F6A3D2F09059B99C8CE289D0A6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "04C92CB0-3826-4B0B-B050-D9FABF896EDF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "521A3D357418F0B8E8211ECD4AF14DC1ACEB62C7" : "adriansmap\/mapkittemp\/",
+    "1D3183C2F32418F6A3D2F09059B99C8CE289D0A6" : "maps\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "maps",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "maps.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/taro220\/maphack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1D3183C2F32418F6A3D2F09059B99C8CE289D0A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Acyu83\/mapkittemp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "521A3D357418F0B8E8211ECD4AF14DC1ACEB62C7"
+    }
+  ]
+}

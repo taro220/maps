@@ -188,7 +188,7 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        var locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         let loc = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
         centerMapOnLocation(location: loc)
         print("locations = \(locValue.latitude) \(locValue.longitude)")
@@ -204,27 +204,6 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
     
     /////////////////////////////
     
-    func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
-        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
-    }
-    
-    
-    func eachSecond(_ timer: Timer) {
-        seconds += 1
-        let (h,m,s) = secondsToHoursMinutesSeconds(seconds: Int(seconds))
-        let secondsQuantity = HKQuantity(unit: HKUnit.second(), doubleValue: Double(s))
-        let minutesQuantity = HKQuantity(unit: HKUnit.minute(), doubleValue: Double(m))
-        let hoursQuantity = HKQuantity(unit: HKUnit.hour(), doubleValue: Double(h))
-        //        timeLabel.text = "Time: "+hoursQuantity.description+" "+minutesQuantity.description+" "+secondsQuantity.description
-        let distanceQuantity = HKQuantity(unit: HKUnit.meter(), doubleValue: distance)
-        //        distanceLabel.text = "Distance: " + distanceQuantity.description
-        
-        //        paceLabel.text = "Current speed: "+String((instantPace*3.6*10).rounded()/10)+" km/h"//"Pace: "+String((distance/seconds*3.6*10).rounded()/10)+" km/h"
-        
-        //        climbLabel.text = "Total climb: "+String((vertClimb*10).rounded()/10)+" m"
-        //        descentLabel.text = "Total descent: "+String((vertDescent*10).rounded()/10)+" m"
-    }
-    ////////////////////
     
     
     
